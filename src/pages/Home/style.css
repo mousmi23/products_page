@@ -1,0 +1,29 @@
+.home {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+.home_panelList-wrap,
+.home_panel-wrap,
+.home_list-wrap {
+  overflow-y: auto;
+}
+
+.home_panelList-wrap {
+  flex: 1; /* To stretch its size  full width */
+  display: flex;
+}
+.home_panel-wrap {
+  flex-basis: 280px; /*to give the width  */
+  padding: 1rem;
+}
+.home_list-wrap {
+  flex: 1; /* To stretch its size  full width */
+  padding: 1rem;
+}
+
+@media (max-width: 760px) {
+  .home_panel-wrap {
+    display: none;
+  }
+}
